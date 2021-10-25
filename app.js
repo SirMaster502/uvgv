@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'))
 // agregar función, requerimiento y respuesta
 app.get('/', (req, res)=>{
     // usar respuesta para enviar un archivo
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + './public/index.html');
 })
 
 // definir un puerto para el servidor
