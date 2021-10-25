@@ -1,9 +1,13 @@
 // este archivo es necesario para crear el servidor
 // constante para express
-const express = require ('express');
+const express = require ('express'),
+    path = require("path"),
+    app = express(),
+    puerto = process.env.PORT || 3000; // Si está definido en el entorno, usarlo. Si no, el 3000
+
 
 // objeto del servidor de la aplicacion
-const app = express();
+//const app = express();
 
 //Especificar archivos de threejs como archivos estáticos
 app.use(express.static(__dirname + '/public'))
