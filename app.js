@@ -11,6 +11,8 @@ const express = require ('express'),
 
 //Especificar archivos de threejs como archivos estáticos
 //app.use(express.static(__dirname + '/public'))
+app.use(express.static(path.join(__dirname, '..', '/public')));
+
 
 // agregar la ruta del html
 // agregar función, requerimiento y respuesta
@@ -18,6 +20,7 @@ app.get('/', (req, res)=>{
     // usar respuesta para enviar un archivo
     res.sendFile(__dirname + '/public/index.html');
 }) 
+
 
 // definir un puerto para el servidor
 // función para avisar que el servidor está corriendo
