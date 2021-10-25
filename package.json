@@ -1,0 +1,29 @@
+{
+  "name": "mapauvg",
+  "version": "1.0.0",
+  "description": "mapa de uvg",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "start.dev": "nodemon app.js"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+     "nodemon": "^2.0.9"
+  },
+  "devDependencies": {
+   
+  },
+  
+    "homepage": "http://nodemon.io",
+    "...": "... other standard package.json values",
+    "nodemonConfig": {
+      "ignore": ["test/*", "docs/*"],
+      "delay": 2500
+    }
+  
+}
